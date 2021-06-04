@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="login usuario" skipped="0" tests="1" time="12.23" timestamp="2021-06-02 11:38:07"><testcase name="login de cliente exitoso"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (chrome not reachable&#10;  (Session info: chrome=90.0.4430.212)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-JILHI5A', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'&#10;Driver info: driver.version: ProvideNewDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x0051C013+2474003]&#10;&#9;Ordinal0 [0x004B29C1+2042305]&#10;&#9;Ordinal0 [0x003C2E30+1060400]&#10;&#9;Ordinal0 [0x003B8019+1015833]&#10;&#9;Ordinal0 [0x003ABBD0+965584]&#10;&#9;Ordinal0 [0x0040A609+1353225]&#10;&#9;Ordinal0 [0x00408FAA+1347498]&#10;&#9;Ordinal0 [0x004066DB+1337051]&#10;&#9;Ordinal0 [0x003E3427+1192999]&#10;&#9;Ordinal0 [0x003E42EE+1196782]&#10;&#9;Ordinal0 [0x003E4279+1196665]&#10;&#9;GetHandleVerifier [0x006A96FC+1590332]&#10;&#9;GetHandleVerifier [0x00758614+2306900]&#10;&#9;GetHandleVerifier [0x005A9E93+543699]&#10;&#9;GetHandleVerifier [0x005A92CE+540686]&#10;&#9;Ordinal0 [0x004B86BA+2066106]&#10;&#9;Ordinal0 [0x004BD1C8+2085320]&#10;&#9;Ordinal0 [0x004BD308+2085640]&#10;&#9;Ordinal0 [0x004C67F3+2123763]&#10;&#9;BaseThreadInitThunk [0x76CDFA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x777C7A7E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x777C7A4E+238]&#10;). See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JILHI5A', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0051C013+2474003]
+	Ordinal0 [0x004B29C1+2042305]
+	Ordinal0 [0x003C2E30+1060400]
+	Ordinal0 [0x003B8019+1015833]
+	Ordinal0 [0x003ABBD0+965584]
+	Ordinal0 [0x0040A609+1353225]
+	Ordinal0 [0x00408FAA+1347498]
+	Ordinal0 [0x004066DB+1337051]
+	Ordinal0 [0x003E3427+1192999]
+	Ordinal0 [0x003E42EE+1196782]
+	Ordinal0 [0x003E4279+1196665]
+	GetHandleVerifier [0x006A96FC+1590332]
+	GetHandleVerifier [0x00758614+2306900]
+	GetHandleVerifier [0x005A9E93+543699]
+	GetHandleVerifier [0x005A92CE+540686]
+	Ordinal0 [0x004B86BA+2066106]
+	Ordinal0 [0x004BD1C8+2085320]
+	Ordinal0 [0x004BD308+2085640]
+	Ordinal0 [0x004C67F3+2123763]
+	BaseThreadInitThunk [0x76CDFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777C7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x777C7A4E+238]
+). See below for more details.</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JILHI5A', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0051C013+2474003]
+	Ordinal0 [0x004B29C1+2042305]
+	Ordinal0 [0x003C2E30+1060400]
+	Ordinal0 [0x003B8019+1015833]
+	Ordinal0 [0x003ABBD0+965584]
+	Ordinal0 [0x0040A609+1353225]
+	Ordinal0 [0x00408FAA+1347498]
+	Ordinal0 [0x004066DB+1337051]
+	Ordinal0 [0x003E3427+1192999]
+	Ordinal0 [0x003E42EE+1196782]
+	Ordinal0 [0x003E4279+1196665]
+	GetHandleVerifier [0x006A96FC+1590332]
+	GetHandleVerifier [0x00758614+2306900]
+	GetHandleVerifier [0x005A9E93+543699]
+	GetHandleVerifier [0x005A92CE+540686]
+	Ordinal0 [0x004B86BA+2066106]
+	Ordinal0 [0x004BD1C8+2085320]
+	Ordinal0 [0x004BD308+2085640]
+	Ordinal0 [0x004C67F3+2123763]
+	BaseThreadInitThunk [0x76CDFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777C7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x777C7A4E+238]
+). See below for more details.&#13;
+com.guru99.demo.steps.LoginUsuarioStep.abrirNavegador(LoginUsuarioStep.java:16)&#13;
+com.guru99.demo.stepdefinitions.LoginUsuarioStepDefinitions.queElUsuarioEsteEnLaPagina(LoginUsuarioStepDefinitions.java:20)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class login usuario</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class login usuario</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; login usuario</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">12.345s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="login de cliente exitoso"></a>
+<h3 class="failures">login de cliente exitoso</h3>
+<span class="code">
+<pre>net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at com.guru99.demo.steps.LoginUsuarioStep.abrirNavegador(LoginUsuarioStep.java:16)
+	at com.guru99.demo.steps.LoginUsuarioStep$$EnhancerByCGLIB$$c2110715.CGLIB$abrirNavegador$1(&lt;generated&gt;)
+	at com.guru99.demo.steps.LoginUsuarioStep$$EnhancerByCGLIB$$c2110715$$FastClassByCGLIB$$d2d9214d.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.guru99.demo.steps.LoginUsuarioStep$$EnhancerByCGLIB$$c2110715.abrirNavegador(&lt;generated&gt;)
+	at com.guru99.demo.stepdefinitions.LoginUsuarioStepDefinitions.queElUsuarioEsteEnLaPagina(LoginUsuarioStepDefinitions.java:20)
+	at ✽.que el usuario este en la pagina(src/test/resources/com.guru99.demo.features/LoginUsuario.feature:7)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JILHI5A', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0051C013+2474003]
+	Ordinal0 [0x004B29C1+2042305]
+	Ordinal0 [0x003C2E30+1060400]
+	Ordinal0 [0x003B8019+1015833]
+	Ordinal0 [0x003ABBD0+965584]
+	Ordinal0 [0x0040A609+1353225]
+	Ordinal0 [0x00408FAA+1347498]
+	Ordinal0 [0x004066DB+1337051]
+	Ordinal0 [0x003E3427+1192999]
+	Ordinal0 [0x003E42EE+1196782]
+	Ordinal0 [0x003E4279+1196665]
+	GetHandleVerifier [0x006A96FC+1590332]
+	GetHandleVerifier [0x00758614+2306900]
+	GetHandleVerifier [0x005A9E93+543699]
+	GetHandleVerifier [0x005A92CE+540686]
+	Ordinal0 [0x004B86BA+2066106]
+	Ordinal0 [0x004BD1C8+2085320]
+	Ordinal0 [0x004BD308+2085640]
+	Ordinal0 [0x004C67F3+2123763]
+	BaseThreadInitThunk [0x76CDFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777C7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x777C7A4E+238]
+). See below for more details.
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:158)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at com.guru99.demo.steps.LoginUsuarioStep.abrirNavegador(LoginUsuarioStep.java:16)
+	at com.guru99.demo.steps.LoginUsuarioStep$$EnhancerByCGLIB$$c2110715.CGLIB$abrirNavegador$1(&lt;generated&gt;)
+	at com.guru99.demo.steps.LoginUsuarioStep$$EnhancerByCGLIB$$c2110715$$FastClassByCGLIB$$d2d9214d.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.guru99.demo.steps.LoginUsuarioStep$$EnhancerByCGLIB$$c2110715.abrirNavegador(&lt;generated&gt;)
+	at com.guru99.demo.stepdefinitions.LoginUsuarioStepDefinitions.queElUsuarioEsteEnLaPagina(LoginUsuarioStepDefinitions.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JILHI5A', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: ProvideNewDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0051C013+2474003]
+	Ordinal0 [0x004B29C1+2042305]
+	Ordinal0 [0x003C2E30+1060400]
+	Ordinal0 [0x003B8019+1015833]
+	Ordinal0 [0x003ABBD0+965584]
+	Ordinal0 [0x0040A609+1353225]
+	Ordinal0 [0x00408FAA+1347498]
+	Ordinal0 [0x004066DB+1337051]
+	Ordinal0 [0x003E3427+1192999]
+	Ordinal0 [0x003E42EE+1196782]
+	Ordinal0 [0x003E4279+1196665]
+	GetHandleVerifier [0x006A96FC+1590332]
+	GetHandleVerifier [0x00758614+2306900]
+	GetHandleVerifier [0x005A9E93+543699]
+	GetHandleVerifier [0x005A92CE+540686]
+	Ordinal0 [0x004B86BA+2066106]
+	Ordinal0 [0x004BD1C8+2085320]
+	Ordinal0 [0x004BD308+2085640]
+	Ordinal0 [0x004C67F3+2123763]
+	BaseThreadInitThunk [0x76CDFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x777C7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x777C7A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:64)
+	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:60)
+	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:169)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:150)
+	... 81 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">login de cliente exitoso</td>
+<td class="failures">12.345s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>jun 02, 2021 11:38:08 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 31081
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: login de cliente exitoso
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Abrir navegador
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (chrome not reachable
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 2/06/2021 11:38:30 PM</p>
+</div>
+</div>
+</body>
+</html>
